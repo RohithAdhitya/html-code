@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     
+        <title>Home</title>
+
+        <style type="text/css">
+ body{
+    margin: 0;
+    background: #222;
+    font-weight: 300;
+    background-image: url(u1RpPB.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background:skyblue;
+}
+
+header::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.logo{
+    float: left;
+    padding: 10px 0;
+
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px; 
+    position: relative;
+}
+
+nav a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover{
+     color: #000;
+}
+
+nav a::before{
+    content: "";
+    display: block;
+    height: 5px;
+    
+    background-color: #444;
+    position: absolute;
+    top: 0%;
+    width: 0%;
+    transition: all ease-in-out 250ms; ;
+}
+
+nav a:hover::before{
+     width: 100%;
+}
+img {
+  border-radius: 50%;
+}
+        
+        
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container">
+
+                <img src="logo.jpg" alt="logo" class="logo" height="100" width="200">
+                <strong style="font-size: xx-large;font-family: Verdana, Geneva, Tahoma, sans-serif;"><br><svg width="200" height="50">
+                    <rect x="0" y="0" width="200" height="50" stroke="red" stroke-width="5px" fill="white"/>
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">FITBLOG</text>    
+                  </svg></strong>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="weightreduce.html">Weight Loss</a></li>
+                        <li><a href="project.html">Weight Gain</a></li>
+                        <li><a href="exercise.html">Exercise</a></li>
+                        <li><a href="bmi.html">BMI</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </body>
+</html>
